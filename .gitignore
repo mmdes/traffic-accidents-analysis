@@ -1,5 +1,3 @@
 taa
-dados/2021.csv
-dados/2022.csv
-dados/2023.csv
-dados/2024.csv
+# data/raw
+# data/processed

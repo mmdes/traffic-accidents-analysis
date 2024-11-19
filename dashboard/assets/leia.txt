@@ -1,0 +1,1 @@
+Imagens, estilos e outras coisas que nossa aplicação precisar, podemos deixar nesta pasta

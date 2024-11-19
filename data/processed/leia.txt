@@ -1,0 +1,1 @@
+Os dados processados ficarão aqui, alimentaremos nossa aplicação streamlit a partir destes dados
