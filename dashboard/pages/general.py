@@ -4,7 +4,7 @@ import numpy as np
 import plotly.express as px
 
 def show():
-    st.title('Informações gerais sobre acidented de trânsito no Brasil')
+    st.title('Informações gerais sobre acidentes de trânsito no Brasil')
 
     # lendo base de dados formatada
     dados = pd.read_csv('./data/processed/data.csv')
