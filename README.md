@@ -34,7 +34,7 @@ Siga os seguintes passos para rodar a aplicação em modo de desenvolvimento:
 3. **Execute os notebooks:**
     - Execute o notebook **/notebooks/exploratory_analysis.ipynb** célula a célula e acompanhe a análise exploratória dos dados.
     - Execute o notebook **/notebook/feature_engineering.ipynb** e acompanhe a transformação do dado até sua persistência em **/data/processed** como data.csv
-4. **Executando a aplicação:**
+4. **Executando a aplicação Streamlit:**
     - Para executar a aplicação rode o seguinte comando
 
     ```bash
