@@ -38,5 +38,5 @@ Siga os seguintes passos para rodar a aplicação em modo de desenvolvimento:
     - Para executar a aplicação rode o seguinte comando
 
     ```bash
-        streamlit /dashboard/app.py
+        streamlit run ./dashboard/app.py
     ```
