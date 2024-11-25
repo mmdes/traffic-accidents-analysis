@@ -5,9 +5,11 @@ import plotly.express as px
 
 def show():
     st.title('Informações gerais sobre acidentes de trânsito no Brasil')
+    st.write('''Aqui é possível encontrar alguns gráficos relacionados às informações gerais dos acidentes acontecidos no Brasil
+             durante o período de 2021 a 2024''')
 
     # lendo base de dados formatada
-    dados = pd.read_csv('./data/processed/data.csv')
+    dados = pd.read_csv('../data/processed/data.csv')
 
     contagem_por_uf = dados.groupby('uf').size().reset_index(name='quantidade')
 

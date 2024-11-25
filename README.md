@@ -3,10 +3,12 @@ Exercício em dupla com o objetivo de **analisar os dados de acidentes de trâns
 
 ## Entendendo os diretórios
 ### `dashboard`
+- **.streamlit**: Contém recursos de configuração do Streamlit.
 - **assets**: Contém recursos estáticos da nossa aplicação Streamlit.
 - **pages**: Contém os arquivos Python que representam as diferentes páginas da aplicação Streamlit.
   - **general.py**: Script contendo a lógica e a visualização da página "Gerais" da aplicação.
-  - **home.py**: Script contendo a lógica e a visualização da página inicial da aplicação.
+  - **home.py**: Script contendo a lógica e a visualização da página inicial "Início" da aplicação.
+  - **travel.py** Script contendo a lógica e a visualização da página "Viagens" da aplicação.
 - **app.py**: Arquivo principal que gerencia a aplicação Streamlit.
 ### `data`
 - **processed**: Armazena os dados que já foram processados e estão prontos para serem utilizados na aplicação Streamlit.
