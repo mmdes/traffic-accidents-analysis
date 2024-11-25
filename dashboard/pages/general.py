@@ -9,8 +9,7 @@ def show():
              durante o período de 2021 a 2024''')
 
     # lendo base de dados formatada
-    base_path = '../data/processed/' 
-    dados = pd.read_csv(base_path + 'data.csv')
+    dados = pd.read_csv('../data/processed/data.csv')
 
     contagem_por_uf = dados.groupby('uf').size().reset_index(name='quantidade')
 
