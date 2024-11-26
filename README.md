@@ -19,9 +19,6 @@ Exercício em dupla com o objetivo de **analisar os dados de acidentes de trâns
 - **exploratory_analysis.ipynb**: Notebook Jupyter contendo a análise exploratória dos dados de acidentes de trânsito.
 - **feature_engineering.ipynb**: Notebook Jupyter contendo a engenharia de atributos dos dados, transformando-os em um formato adequado para aplicação.
 
-
-## Colaboração
-
 ## Como rodar?
 Siga os seguintes passos para rodar a aplicação em modo de desenvolvimento:
 
@@ -42,3 +39,5 @@ Siga os seguintes passos para rodar a aplicação em modo de desenvolvimento:
     ```bash
         streamlit run ./dashboard/app.py
     ```
+
+## Resultados 
