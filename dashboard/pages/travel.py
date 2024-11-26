@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # Lendo base de dados formatada
-base_path = '../data/processed/' 
+base_path = './data/processed/' 
 dados = pd.read_csv(base_path + 'data.csv')
 
 def show():
