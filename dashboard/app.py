@@ -16,6 +16,7 @@ if pagina_selecionada == 'Início':
     home.show()
 elif pagina_selecionada == 'Gerais':
     general.show()
+    general.show_map()
 elif pagina_selecionada == 'Viagens':
     travel.show()
     travel.interacao()
