@@ -5,10 +5,4 @@ def show():
     st.write('''Bem-vindo à página inicial 
              da aplicação. Esta aplicação foi desenvolvida por Gabriel Bittencourt e Matheus Matos 
              para ser apresentada na residência de Inteligência Artificial do SENAI-PR.''')
-
-
-'''
-
-    PODEMOS COLCOAR INFORMAÇÕES SOBRE O EXERCÍCIO NESSA PARTE AQUI
-
-'''
+    st.image("./dashboard/assets/logo.png", caption='Logotipo da Aplicação. Imagem gerada por Inteligência Artificial', width=700)
