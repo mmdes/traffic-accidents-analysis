@@ -16,7 +16,11 @@ if pagina_selecionada == 'Início':
     home.show()
 elif pagina_selecionada == 'Gerais':
     general.show()
+    general.show_topfive_causa()
+    general.show_topfive_tipo()
+    general.show_acidentes_por_condicao_meteorologica()
     general.show_map()
+    general.show_map_accidents_state()
 elif pagina_selecionada == 'Viagens':
     travel.show()
     travel.interacao()
