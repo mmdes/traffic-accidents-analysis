@@ -2,3 +2,5 @@ taa
 data/raw
 data/processed
 dashboard/pages/__pycache__
+dashboard/.streamlit
+notebooks/teste.ipynb
