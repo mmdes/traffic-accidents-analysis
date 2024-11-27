@@ -23,7 +23,7 @@ Exercício em dupla com o objetivo de **analisar os dados de acidentes de trâns
 Siga os seguintes passos para rodar a aplicação em modo de desenvolvimento:
 
 1. **Instalação das dependências:**
-   - Instale todas as dependências necessárias para rodas aplicação em seu ambiente usando o seguinte comando:
+   - Instale todas as dependências necessárias para rodas aplicação em seu ambiente usando o seguinte comando a partir da raiz do projeto:
 
      ```bash
         pip install -r requirements.txt
@@ -34,10 +34,12 @@ Siga os seguintes passos para rodar a aplicação em modo de desenvolvimento:
     - Execute o notebook **/notebooks/exploratory_analysis.ipynb** célula a célula e acompanhe a análise exploratória dos dados.
     - Execute o notebook **/notebook/feature_engineering.ipynb** e acompanhe a transformação do dado até sua persistência em **/data/processed** como data.csv
 4. **Executando a aplicação Streamlit:**
-    - Para executar a aplicação rode o seguinte comando
+    - Para executar rode o seguinte comando a partir da raiz do projeto
 
     ```bash
         streamlit run ./dashboard/app.py
     ```
 
-## Resultados 
+## Navegação pela interface
+
+![navegacao](https://github.com/user-attachments/assets/b33409e4-92fd-4f20-808e-e14305516e30)
