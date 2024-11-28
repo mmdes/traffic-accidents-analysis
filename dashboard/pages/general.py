@@ -94,8 +94,8 @@ def show_topfive_causa():
 
 def show_topfive_tipo():
     # Título e descrição
-    st.title('As 5 principais causas de acidentes no Brasil')
-    st.write('''Este gráfico mostra o top 5 das causas de acidentes de trânsito no Brasil durante o período especificado.''')
+    st.title('Os 5 principais tipos de acidentes no Brasil')
+    st.write('''Este gráfico mostra o top 5 dos tipos de acidentes de trânsito no Brasil durante o período especificado.''')
 
     # Verificar se a coluna 'tipo_acidente' existe no dataset
     if 'tipo_acidente' in dados.columns:
@@ -154,6 +154,36 @@ def show_acidentes_por_condicao_meteorologica():
 
     # Exibir o gráfico no Streamlit
     st.plotly_chart(fig)
+
+def show_acidentes_filtrados_por_condicao_meteorologica():
+    # Título e descrição
+    st.title('Acidentes com Feridos Graves ou Mortes por Condição Meteorológica')
+    st.write(
+        'Este gráfico mostra a quantidade de acidentes em diferentes condições meteorológicas, '
+        'considerando apenas os casos com pelo menos um ferido grave ou uma morte.'
+    )
+
+    # Filtrar os dados com feridos graves ou mortes
+    acidentes_filtrados = dados[(dados['feridos_graves'] >= 1) | (dados['mortos'] >= 1)]
+
+    # Contar as ocorrências das diferentes condições meteorológicas
+    condicao_count_filtrada = acidentes_filtrados['condicao_metereologica'].value_counts().reset_index()
+    condicao_count_filtrada.columns = ['Condição Meteorológica', 'Quantidade de Acidentes']
+
+    # Criar o gráfico de barras
+    fig = px.bar(
+        condicao_count_filtrada,
+        x='Condição Meteorológica',
+        y='Quantidade de Acidentes',
+        title='Acidentes com Feridos Graves ou Mortes por Condição Meteorológica',
+        labels={'Condição Meteorológica': 'Condição Meteorológica', 'Quantidade de Acidentes': 'Número de Acidentes'},
+        color='Condição Meteorológica',
+        color_discrete_sequence=px.colors.qualitative.Set3
+    )
+
+    # Exibir o gráfico no Streamlit
+    st.plotly_chart(fig)
+
 
 def show_map_accidents_state():
     # Título e descrição
