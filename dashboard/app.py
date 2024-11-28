@@ -9,19 +9,20 @@ st.markdown( """ <style> [data-testid="stSidebarNav"] { display: none; } </style
 
 # Criação da barra lateral para navegação
 st.sidebar.title('Navegação')
-pagina_selecionada = st.sidebar.selectbox('Selecione uma página:', ['Início', 'Gerais', 'Viagens'])
+pagina_selecionada = st.sidebar.selectbox('Selecione uma página:', ['Início', 'Dados Gerais de Acidentes', 'Simulação de Viagem'])
 
 # Renderizar a página selecionada
 if pagina_selecionada == 'Início':
     home.show()
-elif pagina_selecionada == 'Gerais':
+elif pagina_selecionada == 'Dados Gerais de Acidentes':
     general.show()
     general.show_topfive_causa()
     general.show_topfive_tipo()
     general.show_acidentes_por_condicao_meteorologica()
+    general.show_acidentes_filtrados_por_condicao_meteorologica()
     general.show_map()
     general.show_map_accidents_state()
-elif pagina_selecionada == 'Viagens':
+elif pagina_selecionada == 'Simulação de Viagem':
     travel.show()
     travel.interacao()
     travel.show_day()
