@@ -1,5 +1,5 @@
 # traffic-accidents-analysis
-Exercício em dupla com o objetivo de **analisar os dados de acidentes de trânsito no Brasil** entre os anos de 2021 a 2024. Neste exercício praticamos processamento e visualização de dados e desenvolvimento colaborativo através do git.
+Exercício desenvolvido por Gabriel Bittencourt e Matheus Matos com o objetivo de **analisar os dados de acidentes de trânsito no Brasil** entre os anos de 2021 a 2024. Neste exercício, praticamos processamento e visualização de dados e desenvolvimento colaborativo através do git.
 
 ## Entendendo os diretórios
 ### `dashboard`
@@ -12,7 +12,7 @@ Exercício em dupla com o objetivo de **analisar os dados de acidentes de trâns
 - **app.py**: Arquivo principal que gerencia a aplicação Streamlit.
 ### `data`
 - **processed**: Armazena os dados que já foram processados e estão prontos para serem utilizados na aplicação Streamlit.
-  - **data.csv**: Arquivo CSV contendo os dados processados prontos para análise.
+  - **data.csv**: Arquivo CSV contendo os dados processados.
 - **raw**: Armazena os dados brutos, que ainda não foram processados.
   - **2021.csv**, **2022.csv**, **2023.csv**, **2024.csv**: Arquivos CSV contendo os dados brutos de acidentes de trânsito dos respectivos anos.
 ### `notebooks`
@@ -23,7 +23,7 @@ Exercício em dupla com o objetivo de **analisar os dados de acidentes de trâns
 Siga os seguintes passos para rodar a aplicação em modo de desenvolvimento:
 
 1. **Instalação das dependências:**
-   - Instale todas as dependências necessárias para rodas aplicação em seu ambiente usando o seguinte comando a partir da raiz do projeto:
+   - Instale todas as dependências necessárias para rodar a aplicação em seu ambiente **Python 3.12.4** usando o seguinte comando a partir da raiz do projeto:
 
      ```bash
         pip install -r requirements.txt
